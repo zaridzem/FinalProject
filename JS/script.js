@@ -1,4 +1,4 @@
-$(".sl").slick({
+$(".slick-slider").slick({
   dots: false,
   infinite: true,
   slidesToShow: 1,
@@ -11,4 +11,11 @@ $(".sl").slick({
 
 document.getElementById("btn").addEventListener("click", function () {
   alert("Thanks for filling out our form! Feedback Sent Successfully");
+});
+
+let toggleButton = document.getElementById("burger");
+let navigation = document.getElementById("nav");
+toggleButton.addEventListener("click", function () {
+  navigation.classList.toggle("navigation-active");
+  toggleButton.classList.toggle("li-active");
 });

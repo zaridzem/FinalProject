@@ -136,3 +136,12 @@ a {
 button {
   border: none;
 }
+#username:focus {
+  outline: none;
+}
+#user-Email:focus {
+  outline: none;
+}
+#feedback:focus {
+  outline: none;
+}

@@ -7,8 +7,38 @@ body {
   background: #e8eaed;
 }
 .burger-menu {
+  position: fixed;
+  top: 5px;
+  left: 20px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2px 2px 2px 3px;
+  cursor: pointer;
   display: none;
 }
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+}
+
+.li-active .line1 {
+  transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
+}
+
+.li-active .line2 {
+  display: none;
+}
+
+.li-active .line3 {
+  transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
+}
+
 .header {
   width: 100%;
   height: 40px;
@@ -23,7 +53,7 @@ body {
   margin-left: 15px;
 }
 .logotext {
-  font-size: 17px;
+  font-size: 18px;
   color: white;
   font-weight: 600;
 }
@@ -71,25 +101,26 @@ body {
 .icon:hover {
   color: black;
 }
+
 /* ends header */
 /* starts slider section */
 .main-slider {
   padding-top: 50px;
 }
 
-.main-sl {
+.main-slick {
   width: 100%;
   background: #e8eaed;
 }
 
-.sl__slide {
+.image-slide {
   width: 100%;
   height: 500px;
   padding: 50px 0;
   position: relative;
 }
 
-.sl__img {
+.slide-img {
   width: 100%;
   height: 100%;
   object-fit: scale-down;
